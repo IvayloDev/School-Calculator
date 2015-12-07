@@ -197,8 +197,8 @@
         Beta2.setText("" + Beta2Final);
         Beta3.setText("" + Beta3Final);
         Beta4.setText("" + Beta4Final);
-        Answer.setText("ß??? =  " + AnswerValue);
-        TrueValue.setText("ß = " + TrueValue2);
+        Answer.setText("ÃŸ??? =  " + AnswerValue);
+        TrueValue.setText("ÃŸ = " + TrueValue2);
 
 
 
