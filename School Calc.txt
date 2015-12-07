@@ -1,0 +1,205 @@
+
+
+    public void onOutsideClick(View view) {
+
+
+        String IPos1Text = Ipos1.getText().toString();
+        String Ipos2Text = Ipos2.getText().toString();
+        String IPos3Text = Ipos3.getText().toString();
+        String IPos4Text = Ipos4.getText().toString();
+        String IPos5Text = Ipos5.getText().toString();
+        String IPos6Text = Ipos6.getText().toString();
+        String IPos7Text = Ipos7.getText().toString();
+        String IPos8Text = Ipos8.getText().toString();
+        String IIPos1Text = IIpos1.getText().toString();
+        String IIPos2Text = IIpos2.getText().toString();
+        String IIPos3Text = IIpos3.getText().toString();
+        String IIPos4Text = IIpos4.getText().toString();
+        String IIPos5Text = IIpos5.getText().toString();
+        String IIPos6Text = IIpos6.getText().toString();
+        String IIPos7Text = IIpos7.getText().toString();
+        String IIPos8Text = IIpos8.getText().toString();
+
+        int Ipos1Value = Integer.parseInt(IPos1Text);
+        int Ipos2Value = Integer.parseInt(Ipos2Text);
+        int Ipos3Value = Integer.parseInt(IPos3Text);
+        int Ipos4Value = Integer.parseInt(IPos4Text);
+        int Ipos5Value = Integer.parseInt(IPos5Text);
+        int Ipos6Value = Integer.parseInt(IPos6Text);
+        int Ipos7Value = Integer.parseInt(IPos7Text);
+        int Ipos8Value = Integer.parseInt(IPos8Text);
+        int IIpos1Value = Integer.parseInt(IIPos1Text);
+        int IIpos2Value = Integer.parseInt(IIPos2Text);
+        int IIpos3Value = Integer.parseInt(IIPos3Text);
+        int IIpos4Value = Integer.parseInt(IIPos4Text);
+        int IIpos5Value = Integer.parseInt(IIPos5Text);
+        int IIpos6Value = Integer.parseInt(IIPos6Text);
+        int IIpos7Value = Integer.parseInt(IIPos7Text);
+        int IIpos8Value = Integer.parseInt(IIPos8Text);
+
+
+        int TwoS1Value1 = Ipos1Value % 10000;
+        int TwoS1Value2 = Ipos2Value % 10000;
+        int TwoS1Value3 = Ipos3Value % 10000;
+        int TwoS1Value4 = Ipos4Value % 10000;
+        int TwoS1Value5 = Ipos5Value % 10000;
+        int TwoS1Value6 = Ipos6Value % 10000;
+        int TwoS1Value7 = Ipos7Value % 10000;
+        int TwoS1Value8 = Ipos8Value % 10000;
+        int TwoS1Value9 = IIpos1Value % 10000;
+        int TwoS1Value10 = IIpos2Value % 10000;
+        int TwoS1Value11 = IIpos3Value % 10000;
+        int TwoS1Value12 = IIpos4Value % 10000;
+        int TwoS1Value13 = IIpos5Value % 10000;
+        int TwoS1Value14 = IIpos6Value % 10000;
+        int TwoS1Value15 = IIpos7Value % 10000;
+        int TwoS1Value16 = IIpos8Value % 10000;
+
+
+
+
+        int TwoS2firstFinal1 = (TwoS1Value1 - TwoS1Value9);
+        int TwoS2FirstFinal2 = (TwoS1Value2 - TwoS1Value10);
+        int TwoS2FirstFinal3 = (TwoS1Value3 - TwoS1Value11);
+        int TwoS2FirstFinal4 = (TwoS1Value4 - TwoS1Value12);
+        int TwoS2FirstFinal5 = (TwoS1Value5 - TwoS1Value13);
+        int TwoS2FirstFinal6 = (TwoS1Value6 - TwoS1Value14);
+        int TwoS2FirstFinal7 = (TwoS1Value7 - TwoS1Value15);
+        int TwoS2FirstFinal8 = (TwoS1Value8 - TwoS1Value16);
+
+        int TwoSFinal = Math.abs(TwoS2firstFinal1);
+        int TwoS2Final = Math.abs(TwoS2FirstFinal2);
+        int Twos3Final = Math.abs(TwoS2FirstFinal3);
+        int Twos4Final = Math.abs(TwoS2FirstFinal4);
+        int Twos5Final = Math.abs(TwoS2FirstFinal5);
+        int Twos6Final = Math.abs(TwoS2FirstFinal6);
+        int Twos7Final = Math.abs(TwoS2FirstFinal7);
+        int Twos8Final = Math.abs(TwoS2FirstFinal8);
+
+        int Sredno1Final = 0;
+        int Sredno2Final = 0;
+        int Sredno3Final = 0;
+        int Sredno4Final = 0;
+        int Sredno5Final = 0;
+        int Sredno6Final = 0;
+        int Sredno7Final = 0;
+        int Sredno8Final = 0;
+
+        //Middle
+        if(TwoS1Value1 > TwoS1Value9) {
+            Sredno1Final = Ipos1Value - (TwoSFinal / 2);
+        }
+        if(TwoS1Value1 < TwoS1Value9){
+            Sredno1Final = Ipos1Value + (TwoSFinal /2 );
+        }
+        if(TwoS1Value2 > TwoS1Value10) {
+            Sredno2Final = Ipos2Value - (TwoS2Final / 2);
+        }
+        if(TwoS1Value2 < TwoS1Value10){
+            Sredno2Final = Ipos2Value + (TwoS2Final / 2);
+        }
+        if(TwoS1Value3 > TwoS1Value11){
+            Sredno3Final = Ipos3Value - (Twos3Final /2);
+        }
+        if(TwoS1Value3 < TwoS1Value11){
+            Sredno3Final = Ipos3Value + (Twos3Final /2);
+        }
+        if(TwoS1Value4 > TwoS1Value12){
+            Sredno4Final = Ipos4Value - (Twos4Final /2);
+
+        }if(TwoS1Value4 < TwoS1Value12){
+            Sredno4Final = Ipos4Value + (Twos4Final /2);
+
+        } if(TwoS1Value5 > TwoS1Value13){
+            Sredno5Final = Ipos5Value - (Twos5Final /2);
+
+        } if(TwoS1Value5 < TwoS1Value13){
+            Sredno5Final = Ipos5Value + (Twos5Final /2);
+
+        } if(TwoS1Value6 > TwoS1Value14){
+            Sredno6Final = Ipos6Value - (Twos6Final /2);
+
+        } if(TwoS1Value6 < TwoS1Value14){
+            Sredno6Final = Ipos6Value + (Twos6Final /2);
+
+        } if(TwoS1Value7 > TwoS1Value15){
+            Sredno7Final = Ipos7Value - (Twos7Final /2);
+
+        } if(TwoS1Value7 < TwoS1Value15){
+            Sredno7Final = Ipos7Value + (Twos7Final /2);
+
+        } if(TwoS1Value8 > TwoS1Value16){
+            Sredno8Final = Ipos8Value - (Twos8Final /2);
+
+        } if(TwoS1Value8 < TwoS1Value16){
+            Sredno8Final = Ipos8Value + (Twos8Final /2);
+
+        }
+
+
+        int Sredno1Final1 = Sredno1Final + 4000000;
+        int Sredno2Final2 = Sredno4Final + 4000000;
+        int Sredno2Final3 = Sredno6Final + 4000000;
+        int Sredno2Final4 = Sredno8Final + 4000000;
+
+
+        if (Sredno1Final < Sredno2Final) {
+            Beta1Final = Sredno1Final1 - Sredno2Final;
+        }  if(Sredno1Final > Sredno2Final){
+            Beta1Final = Sredno1Final - Sredno2Final;
+        }
+
+        if (Sredno4Final < Sredno3Final) {
+            Beta2Final = Sredno2Final2 - Sredno3Final;
+        }  if(Sredno4Final > Sredno3Final){
+            Beta2Final = Sredno4Final - Sredno3Final;
+        }
+
+        if (Sredno6Final < Sredno5Final) {
+            Beta3Final = Sredno2Final3 - Sredno5Final;
+        }  if(Sredno6Final > Sredno5Final){
+            Beta3Final = Sredno6Final - Sredno5Final;
+        }
+
+        if (Sredno8Final < Sredno7Final) {
+            Beta4Final = Sredno2Final4 - Sredno7Final;
+        }  if(Sredno8Final > Sredno7Final){
+            Beta4Final = Sredno8Final - Sredno7Final;
+        }
+
+
+
+        int AnswerValue = Beta1Final+Beta2Final+Beta3Final+Beta4Final;
+
+
+        int TrueValue1 = AnswerValue;
+        int TrueValue2 = TrueValue1 - 12000000;
+
+
+
+        TwoS1.setText("" + TwoSFinal);
+        TwoS2.setText("" + TwoS2Final);
+        TwoS3.setText("" + Twos3Final);
+        TwoS4.setText("" + Twos4Final);
+        TwoS5.setText("" + Twos5Final);
+        TwoS6.setText("" + Twos6Final);
+        TwoS7.setText("" + Twos7Final);
+        TwoS8.setText("" + Twos8Final);
+        Sredno1.setText("" + Sredno1Final);
+        Sredno2.setText("" + Sredno2Final);
+        Sredno3.setText("" + Sredno3Final);
+        Sredno4.setText("" + Sredno4Final);
+        Sredno5.setText("" + Sredno5Final);
+        Sredno6.setText("" + Sredno6Final);
+        Sredno7.setText("" + Sredno7Final);
+        Sredno8.setText("" + Sredno8Final);
+        Beta1.setText("" + Beta1Final);
+        Beta2.setText("" + Beta2Final);
+        Beta3.setText("" + Beta3Final);
+        Beta4.setText("" + Beta4Final);
+        Answer.setText("ß??? =  " + AnswerValue);
+        TrueValue.setText("ß = " + TrueValue2);
+
+
+
+    }
